@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no"
+        />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+
+        <title>Estação meteorológica - Dashboard</title>
+        <!-- Custom fonts for this template-->
+        <link
+            href="vendor/fontawesome-free/css/all.min.css"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link
+            href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+            rel="stylesheet"
+        />
+
+        <!-- Custom styles for this template-->
+        <link href="css/style.css" rel="stylesheet" />
+    </head>
+
+    <body id="page-top">
+        <!-- Page Wrapper -->
+        <div id="wrapper">
+            <!-- Sidebar -->
+            <ul
+                class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion"
+                id="accordionSidebar"
+            >
+                <!-- Sidebar - Brand -->
+                <a
+                    class="sidebar-brand d-flex align-items-center justify-content-center"
+                    href="index.html"
+                >
+                    <div class="sidebar-brand-icon rotate-n-15">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="sidebar-brand-text mx-3">Estação Metereológica</div>
+                </a>
+
+                <!-- Divider -->
+                <hr class="sidebar-divider my-0" />
+
+                <!-- Nav Item - Dashboard -->
+
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-fw fa-home"></i>
+                        <span>Inicio</span></a>
+                </li>
+                <!--<li class="nav-item">
+                    <a class="nav-link" href="estatisticas.html">
+                        <i class="fas fa-fw fa-sun"></i>
+                        <span>Tomar</span></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <i class="fas fa-fw fa-cloud"></i>
+                        <span>Coimbra</span>
+                    </a>
+                </li> -->
+            </ul>
+            <!-- End of Sidebar -->
+
+            <!-- Content Wrapper -->
+            <div id="content-wrapper" class="d-flex flex-column">
+                <!-- Main Content -->
+                <div id="content">
+
+                    <!-- Begin Page Content -->
+                    <div class="container-fluid">
+                        <!-- Page Heading -->
+                        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                            <h1 class="h3 mb-0 text-gray-800" style="margin-top: 30px;">Estação Metereológica</h1>
+                        </div>
+
+                        <div class="row"  id="card-container" style="justify-content: space-evenly;">
+                            <!--
+                            <div class="card-meteorologia-dia" id="card-meteorologia-tomar" onclick="window.location.href='estatisticas.html'">
+                                <div class="container">
+                                    <div class="cloud front">
+                                        <span class="left-front"></span>
+                                        <span class="right-front"></span>
+                                    </div>
+                                    <span class="sun sunshine"></span>
+                                    <span class="sun"></span>
+                                    <div class="cloud back">
+                                        <span class="left-back"></span>
+                                        <span class="right-back"></span>
+                                    </div>
+                                </div>       
+
+                                <div class="card-meteorologia-header-dia" id="card-meteorologia-header-tomar">
+                                    <span id="location1">FAKE Tomar</span>
+                                    <span id="date1">28/06/2023</span>
+                                </div>
+                            
+                                <span class="temp-dia" id="temp-tomar">23° C</span>
+                            
+                                <div class="dia" id="status1">
+                                <span>Dia</span>
+                                </div>
+                            
+                                <div class="flex-grow-1" style="font-size: 1rem; margin-top: 20px">
+                                <div>
+                                    <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                                    <span class="ms-1" id="humidity1">84%</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-sun fa-fw" style="color: #868b94"></i>
+                                    <span class="ms-1" id="luminusidade1">0.2l</span>
+                                </div>
+                                </div>
+                            </div>
+                            
+                            <div class="card-meteorologia-noite">
+                                <div class="container">
+                                    <div class="stars left">
+                                        <i class="fas fa-fw fa-star"></i>
+                                    </div>
+                                    <div class="stars front">
+                                        <i class="fas fa-fw fa-star"></i>
+                                    </div>
+                                    <span class="moon"></span>
+                                    <div class="stars back">
+                                        <i class="fas fa-fw fa-star"></i>
+                                    </div>
+                                </div>
+                            
+                                <div class="card-meteorologia-header-noite">
+                                <span id="location2">FAKE Coimbra</span>
+                                <span id="date2">28/06/2023</span>
+                                </div>
+                            
+                                <span class="temp-noite" id="temperature2">23° C</span>
+                            
+                                <div class="noite">
+                                <span>Noite</span>
+                                </div>
+                            
+                                <div class="flex-grow-1" style="font-size: 1rem; margin-top: 20px">
+                                <div>
+                                    <i class="fas fa-tint fa-fw" style="color: #868b94"></i>
+                                    <span class="ms-1" id="humidity2">84%</span>
+                                </div>
+                                <div>
+                                    <i class="fas fa-sun fa-fw" style="color: #868b94"></i>
+                                    <span class="ms-1" id="sunshine2">0.2h</span>
+                                </div>
+                                </div>
+                            </div>-->
+                        </div> 
+
+
+
+
+                        <!-- GRÁFICOS -->
+                        <!-- Area Chart -->
+                        <div class="row" style="justify-content: flex-start; display: none;">
+                        <div class="col-xl-5 col-lg-7">
+                            <div class="mb-4">
+                                <!-- Card Header - Dropdown -->
+                                    <h6
+                                        class="m-0 font-weight-bold text-dark"
+                                        style="text-align: center;"
+                                    >
+                                        Luminosidade
+                                    </h6>
+                                
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <canvas id="luminosityChart"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-1 mb-4">
+                            <div class="card bg-success text-white shadow" id="luz" onclick="luz(sendLedCommand)" style="height: 100%;">
+                                <div
+                                    class="card-body" id="luzContent"
+                                    style="padding-top: 13vh;text-align: center; cursor: pointer; display: flex; flex-direction: column; align-items: center;"
+                                >
+                                    <img src="./img/light-bulb-On.svg" />
+                                    <br/>
+                                    <span>Luz</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                        <!-- Content Row -->
+                        <div class="row" style="display: none;">
+                            <!-- Area Chart -->
+                            <div class="col-xl-6 col-lg-7">
+                                <div class="card shadow mb-4">
+                                    <!-- Card Header - Dropdown -->
+                                    <div
+                                        class="card-header py-3 d-flex flex-row align-items-center justify-content-between"
+                                    >
+                                        <h6
+                                            class="m-0 font-weight-bold text-primary"
+                                        >
+                                            Temperatura
+                                        </h6>
+                                       
+                                    </div>
+                                    <!-- Card Body -->
+                                    <div class="card-body">
+                                        <div class="chart-area">
+                                            <canvas id="temperatureChart"></canvas>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- GRÁFICOS -->
+                            <div class="col-xl-6 col-lg-7">
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.container-fluid -->
+                </div>
+
+                <!-- End of Main Content -->
+            </div>
+            <!-- End of Content Wrapper -->
+        </div>
+        <!-- End of Page Wrapper -->
+
+        <!-- Scroll to Top Button-->
+        <a class="scroll-to-top rounded" href="#page-top">
+            <i class="fas fa-angle-up"></i>
+        </a>
+
+        <!-- Bootstrap core JavaScript-->
+        <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Core plugin JavaScript-->
+        <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+        <!-- Custom scripts for all pages-->
+        <script src="js/utils.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Page level plugins -->
+        <script src="vendor/chart.js/Chart.min.js"></script>
+
+        <!-- Page level custom scripts -->
+        <script src="js/customchart.js"></script>
+        <script>
+            $(document).ready(function() {
+                connectToWebSocket();
+            });
+        </script>
+    </body>
+</html>

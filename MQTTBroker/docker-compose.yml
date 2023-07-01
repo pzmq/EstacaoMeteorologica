@@ -1,0 +1,17 @@
+version: '4.2.0'
+services:
+  ############### MQTT
+  mqttserver:
+    container_name: mqtt
+    image: eclipse-mosquitto
+    restart: always
+    ports:
+      - 1883:1883
+      - 9001:9001
+    volumes:
+      - ./mosquitto/config:/mosquitto/config
+      - ./mosquitto/data:/mosquitto/data
+      - ./mosquitto/log:/mosquitto/log
+
+
+
